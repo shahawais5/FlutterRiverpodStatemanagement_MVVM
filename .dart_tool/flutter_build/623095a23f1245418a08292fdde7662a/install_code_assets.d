@@ -1,0 +1,1 @@
+ /Users/shahawais/Desktop/FlutterRiverpodStatemanagement_MVVM/.dart_tool/flutter_build/623095a23f1245418a08292fdde7662a/native_assets.json: 

@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'MVVM Riverpod Counter',
+      title: 'MVVM Riverpod Statemanagement',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: const LoginView(),
     );
