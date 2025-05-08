@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../constants/app_keys.dart';
+import '../helpers/router_helper.dart';
 import '../provider/login_provider.dart';
-import 'counter_view.dart';
 
 class LoginView extends ConsumerStatefulWidget {
   const LoginView({super.key});
@@ -23,16 +24,15 @@ class _LoginViewState extends ConsumerState<LoginView> {
       next.whenOrNull(
         data: (auth) {
           if (auth != null) {
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (_) => const CounterView()),
-            );
+            AppKeys.mainNavigatorKey.currentState?.pushNamed(RouterHelper.counterScreen);
           }
         },
         error: (e, _) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text(e.toString())),
           );
+          //for now dummy navigation u can use your api call for success case
+          AppKeys.mainNavigatorKey.currentState?.pushNamed(RouterHelper.counterScreen);
         },
       );
     });
