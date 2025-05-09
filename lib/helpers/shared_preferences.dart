@@ -1,6 +1,6 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
-class SharedPreferenceHelper {
+class LocalDb {
   static const String _userKey = 'user_data';
 
   /// Save user data as JSON string
