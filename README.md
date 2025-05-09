@@ -114,9 +114,6 @@ Consumer(
 
 * `flutter_riverpod` – State management
 * `http` – REST API calls
-* `go_router` or custom Navigator – Routing
-* `equatable` – Value equality for models
-* `flutter_hooks` *(optional)* – Reactive UI logic
 
 ---
 
