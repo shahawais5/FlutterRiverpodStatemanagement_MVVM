@@ -32,7 +32,7 @@ class _LoginViewState extends ConsumerState<LoginView> {
             SnackBar(content: Text(e.toString())),
           );
           //for now dummy navigation u can use your api call for success case
-          AppKeys.mainNavigatorKey.currentState?.pushNamed(RouterHelper.counterScreen);
+          AppKeys.mainNavigatorKey.currentState?.pushNamed(RouterHelper.bottomNavigation);
         },
       );
     });

@@ -43,6 +43,36 @@ class ApiRepo {
     }
   }
 
+  Future<http.Response?> getRequestHTTP(
+      BuildContext context,
+      String url, {
+        String? bearerToken,
+      }) async {
+    debugPrint("GET Request → $url");
+    debugPrint("Bearer Token → $bearerToken");
+
+    final headers = {
+      if (bearerToken != null)
+        HttpHeaders.authorizationHeader: "Bearer $bearerToken",
+      HttpHeaders.acceptHeader: "*/*",
+      'x-org-name': "cloud",
+      'x-app-name': "main",
+    };
+
+    try {
+      final response = await http.get(
+        Uri.parse(url),
+        headers: headers,
+      );
+      return response;
+    } catch (e) {
+      debugPrint("HTTP Error: $e");
+      showToast(message: 'Network error', context: context);
+      return null;
+    }
+  }
+
+
   void handleError(http.Response? response, BuildContext context) {
     if (response == null) {
       showToast(message: 'An unexpected error occurred', context: context);
