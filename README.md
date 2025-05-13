@@ -133,19 +133,5 @@ Contributions are welcome! Please follow conventional commits and write clean, t
 
 ---
 
-## 📄 License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-```
-
----
-
-### ✅ What to Do Next
-
-- **Paste** this into your `README.md` file.
-- Replace `https://github.com/yourusername/yourproject.git` with your actual repo URL.
-- Update any package names or folder names if they differ in your structure.
-
-Let me know if you want to add badges (e.g., build status, license, platform support), a logo, or project screenshots.
-```
