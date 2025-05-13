@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "79642509790",
+    "project_id": "mvvmriverpod",
+    "storage_bucket": "mvvmriverpod.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79642509790:android:6d8503de16a301db1a1d4f",
+        "android_client_info": {
+          "package_name": "com.example.statemanagement"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU_w9USn6jXQOHMZK3yv6hDK2O-xgT_TI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
